@@ -9,4 +9,24 @@ TOPSIS-Nikhal-101816034 can be run by typing the following code snippet:
 python topsis.py "data.csv" "1,1,1,2" "+,+,-,+" "Result.csv"
 
 # Sample Dataset
-The decison-matrix should be constructed with each row representing a model alternative and each column representing criterian such as accuracy,$\{R}^2$
+The decison-matrix should be constructed with each row representing a model alternative and each column representing criterian such as accuracy,R-Sqaure,Root Mean Squared error,Correlation etc.
+
+| Model | Corr | Rseq | RMSE | Accuracy |
+|-------|------|------|------|----------|
+| M1    | 0.79 | 0.62 | 1.25 | 60.89    |
+| M2    | 0.66 | 0.44 | 2.89 | 63.07    |
+| M3    | 0.56 | 0.31 | 1.57 | 62.87    |
+| M4    | 0.82 | 0.67 | 2.68 | 70.19    |
+| M5    | 0.75 | 0.56 | 1.3  | 80.39    |
+
+# Output
+| Model | Score             | Rank |
+|-------|-------------------|------|
+| 1     | 0.476957713840877 | 2    |
+| 2     | 0.476572577796742 | 3    |
+| 3     | 0.477495853743771 | 1    |
+| 4     | 0.475616911138615 | 5    |
+| 5     | 0.475948812224928 | 4    |
+
+_The Ranking are displayed in the result csv file, with 1st rank offering the best decision and last rank offering the worst decision according to the TOPSIS method._
+
