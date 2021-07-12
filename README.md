@@ -31,6 +31,6 @@ The decison-matrix should be constructed with each row representing a model alte
 _The Ranking are displayed in the result csv file, with 1st rank offering the best decision and last rank offering the worst decision according to the TOPSIS method._
 
 # Install Pachakge using command:
-'''$shell
+```$shell
 $ pip install topsis-101816034
-'''
+```
